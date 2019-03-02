@@ -1,0 +1,33 @@
+Sub Chess():
+' Size
+Columns("A:H").ColumnWidth = "11"
+Rows("1:8").RowHeight = "44"
+
+' Color Black
+Range("A1,C1,E1,G1").Interior.Color = RGB(0, 0, 0)
+Range("B2,D2,F2,H2").Interior.Color = RGB(0, 0, 0)
+Range("A3,C3,E3,G3").Interior.Color = RGB(0, 0, 0)
+Range("B4,D4,F4,H4").Interior.Color = RGB(0, 0, 0)
+Range("A5,C5,E5,G5").Interior.Color = RGB(0, 0, 0)
+Range("B6,D6,F6,H6").Interior.Color = RGB(0, 0, 0)
+Range("A7,C7,E7,G7").Interior.Color = RGB(0, 0, 0)
+Range("B8,D8,F8,H8").Interior.Color = RGB(0, 0, 0)
+
+'Font
+Range("A1:H2").Font.Color = RGB(200, 0, 0)
+Range("A7:H8").Font.Color = RGB(0, 0, 200)
+Range("A1:H2,A7:H8").Font.Bold = True
+
+'Alignment
+Range("A1:H2,A7:H8").VerticalAlignment = xlCenter
+Range("A1:H2,A7:H8").HorizontalAlignment = xlCenter
+
+' Pawns
+Range("A2:H2,A7:H7").Value = "Pawn"
+Range("A1,H1,A8,H8").Value = "Rook"
+Range("B1,G1,B8,G8").Value = "Knight"
+Range("C1,F1,C8,F8").Value = "Bishop"
+Range("D1,D8").Value = "Queen"
+Range("E1,E8").Value = "King"
+
+End Sub
