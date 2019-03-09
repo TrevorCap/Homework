@@ -1,12 +1,3 @@
-VERSION 1.0 CLASS
-BEGIN
-  MultiUse = -1  'True
-END
-Attribute VB_Name = "ThisWorkbook"
-Attribute VB_GlobalNameSpace = False
-Attribute VB_Creatable = False
-Attribute VB_PredeclaredId = True
-Attribute VB_Exposed = True
 Sub Every():
 'Define necessary variables
 Dim sheet As Worksheet
@@ -106,14 +97,11 @@ Range("J2:K" & LastTicker).Select
     Selection.AutoFill Destination:=Range("H2:H" & LastRow)
 
 'Do prettier formats because we are not animals.
-sheet.Range("J2:J" & LastTicker).NumberFormat = "* #,##0.00;* (#,##0.00)"
+'sheet.Range("J2:J" & LastTicker).NumberFormat = "* #,##0.00;* (#,##0.00)"
 sheet.Range("K2:K" & LastTicker).NumberFormat = "0.0%"
-sheet.Range("L2:L" & LastTicker).NumberFormat = "* #,##0;* (#,##0)"
-sheet.Columns("A:G,I:L,O:Q").AutoFit
+'sheet.Range("L2:L" & LastTicker).NumberFormat = "* #,##0;* (#,##0)"
+'sheet.Columns("A:G,I:L,O:Q").AutoFit
 
 Next sheet
 
 End Sub
-
-
-
