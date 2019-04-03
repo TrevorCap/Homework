@@ -1,0 +1,5 @@
+One thing that is readily apparent is that the average fare is inversely correlated with the number of rides per city and also with the type of city, with rural cities charging a higher average fare with a lower number of total rides, with urban cities providing more rides at lower average fares.
+Two likely explanations for this are that that the demand for rides places downward pressure on price. Another could be that urban cities, simply have shorter rides on average. It would be possible to explore this time theory, but that analysis has not yet been performed.
+It is also clear that the total number of drivers is positively correlated with total number of rides per city. This is why, in the bottom right hand corner, the urabn dots are extremely large.
+It seems likely that this is because high demand leads to more drivers willing to meet the supply.
+A third trend evident in the data is that Urban drivers do fewer rides on average. This is apparent because while they make up 80.9% of the drivers, they deliver only 68.4% of the rides.
